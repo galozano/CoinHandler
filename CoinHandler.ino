@@ -31,7 +31,6 @@ void setup()
 void coinInserted()    
 {
   int coinRise = 1;
-
   coinsValue = coinsValue + 1;  
   
   //new Coin was inserted
@@ -43,9 +42,7 @@ void loop()
   //Check if a coin has been Inserted
   if(coinsChange == 1)          
   {
-    //unflag that a coin has been inserted
     coinsChange = 0;              
-   
     String printValue = "Credit:" + String(coinsValue);     
     //Print the Value of coins inserted
     Serial.println(printValue);   
